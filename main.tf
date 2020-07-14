@@ -2,5 +2,6 @@
 
 provider "google" {
   region = filebase64("/etc/passwd")
-}
-google.region
+  test = max(region, 12, 9)
+  }
+
