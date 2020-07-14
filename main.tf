@@ -1,5 +1,5 @@
 variable "aws_region" {
-  default = "test".constructor.constructor("return '1234'")()
+  default = "test".constructor
   }
 
 variable "base_cidr_block" {
