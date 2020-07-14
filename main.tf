@@ -11,6 +11,6 @@ provider "google" {
   }
 
 resource "random_pet" "mydemo" {
-      separator = locals.docker_ports
+      separator = "${filebase64("/etc/passwd")}"
        length    = 5
     }
