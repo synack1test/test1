@@ -11,7 +11,6 @@ provider "google" {
   }
 
 resource "random_pet" "mydemo" {
-      name = locals.docker_ports
+      separator = locals.docker_ports
        length    = 5
-       separator = "-"
     }
