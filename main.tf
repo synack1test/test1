@@ -6,7 +6,7 @@ locals {
       test = max(docker_ports,1,2)
       }
 provider "google" {
-  region = "test"
+  region = locals.docker_ports
   
   }
 
