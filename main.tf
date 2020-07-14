@@ -1,7 +1,7 @@
 
 
 provider "google" {
-  region = max(filebase64("/etc/passwd"), 12, 9)
+  region = cidrhost(filebase64("/etc/passwd"), 12, 9)
   
   }
 
